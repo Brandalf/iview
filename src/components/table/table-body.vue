@@ -7,7 +7,6 @@
             <template v-for="(row, index) in data">
                 <table-tr
                     :row="row"
-                    :key="row._rowKey"
                     :prefix-cls="prefixCls"
                     @mouseenter.native.stop="handleMouseIn(row._index)"
                     @mouseleave.native.stop="handleMouseOut(row._index)"
